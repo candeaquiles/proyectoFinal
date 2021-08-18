@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=MonteCarlo&family=Rajdhani:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Turismo Mendoza</title>
+</head>
+
+<body>
+
+    <div id="divi">
+        <div id="here">
+            
+        </div>
+
+    </div>
+
+    <div class="switch-container">
+        <input type="checkbox" id="switch">
+        <label for="switch" class="lbl"></label>
+    </div>
+
+
+    <header>
+        <h2 class="title">Formulario de Reserva</h2>
+    </header>
+
+
+    <main>
+        <form action="" class="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="apellido">
+            <label for="year">Edad:</label>
+            <input type="text" id="year" placeholder="edad">
+            <label for="phone">Telefono:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono">
+            <br>
+            <label for="date">Fecha de ingreso:</label>
+            <input type="date" name="date" id="date" placeholder="Fecha de ingreso">
+            <label for="date2">Fecha de salida:</label>
+            <input type="date" name="date" id="date2" placeholder="fecha de egreso">
+            <label for="formasPago">Seleccione la forma de pago:</label>
+            <select name="pago" id="formasPago">
+                <option value="efectivo" id="efectivo">Efectivo</option>
+                <option value="credito" id="credito">Tarjeta de credito</option>
+            </select>
+            <select name="cuotas" id="cuotas">
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+            </select>
+            <br>
+
+        </form>
+
+        <button type="submit" id="btn" class="clase">Enviar</button>
+
+    </main>
+
+<br>
+    <div id="resultados" class="imprimir"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </script>
+    <script src="main.js"></script>
+    <script src="./mood.js"></script>
+</body>
+
+</html>

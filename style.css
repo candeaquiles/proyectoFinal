@@ -1,0 +1,139 @@
+body{
+    padding: 1em;
+    background-color: #cfc6ca;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.144);
+    font: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+.form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.clase{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(245, 236, 248);
+    cursor: pointer;
+}
+
+.clase button{
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.imprimir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.imprimir p{
+    margin: 1em;
+    font-family:'Rajdhani', sans-serif; 
+    font-size: 15px;
+}
+
+.divi{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.here{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/*DARK MODE*/
+.lbl{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.lbl::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+
+}
+
+#switch:checked + .lbl::after{
+    left: 35px;
+}
+
+#switch:checked + .lbl{
+    background: lightskyblue;
+}
+
+#switch{
+    display: none;
+}
+
+#cuotas{
+    display: none;
+}
